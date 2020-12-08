@@ -14,7 +14,7 @@ Simple imperative AST comparer library written on top of LINVAST. Made to be ext
 - [MathNET.Symbolics](https://symbolics.mathdotnet.com/)
 
 ## Examples (using CLI tool):
-Several examples can be found in the ![Samples](LINVAST.Imperative.Comparers/Samples/) directory. One sample will be shown below.
+Several examples can be found in the ![Samples](Samples/) directory. One sample will be shown below.
 
 ```sh 
 $ linvast cmp
@@ -34,31 +34,31 @@ ERROR(S):
 
 ### Example for swap sources
 
-Sources: ![valid.c](LINVAST.Imperative.Comparers/Samples/swap/valid.c) ![wrong.c](LINVAST.Imperative.Comparers/Samples/swap/wrong.c)
+Sources: ![valid.c](Samples/swap/valid.c) ![wrong.c](Samples/swap/wrong.c)
 
 ```sh
 $ linvast cmp Samples/swap/valid.c Samples/swap/wrong.c
 ```
 
-![swap](LINVAST.Imperative.Comparers/Samples/swap/valid_c-wrong_c.PNG)
+![swap](Samples/swap/valid_c-wrong_c.PNG)
 
 
-Sources: ![valid.psc](LINVAST.Imperative.Comparers/Samples/swap/valid.psc) ![wrong.c](LINVAST.Imperative.Comparers/Samples/swap/wrong.c)
+Sources: ![valid.psc](Samples/swap/valid.psc) ![wrong.c](Samples/swap/wrong.c)
 
 ```sh
 $ linvast cmp Samples/swap/valid.psc Samples/swap/wrong.c
 ```
 
-![swap](LINVAST.Imperative.Comparers/Samples/swap/valid_psc-wrong_c.PNG)
+![swap](Samples/swap/valid_psc-wrong_c.PNG)
 
 
-Sources: ![valid.c](LINVAST.Imperative.Comparers/Samples/swap/valid.c) ![refactor.c](LINVAST.Imperative.Comparers/Samples/swap/refactor.c) (*Note: Overflow is not checked at the moment*)
+Sources: ![valid.c](Samples/swap/valid.c) ![refactor.c](Samples/swap/refactor.c) (*Note: Overflow is not checked at the moment*)
 
 ```sh
 $ linvast cmp Samples/swap/valid.c Samples/swap/refactor.c
 ```
 
-![swap](LINVAST.Imperative.Comparers/Samples/swap/valid_c-refactor_c.PNG)
+![swap](Samples/swap/valid_c-refactor_c.PNG)
 
 
 # Extending library with new comparers
